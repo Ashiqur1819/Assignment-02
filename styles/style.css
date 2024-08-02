@@ -1,2 +1,88 @@
 @import url('https://fonts.googleapis.com/css2?family=Fasthand&family=Inter:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+:root{
+    --primary-color: rgb(230, 83, 60);
+}
+*{
+    margin: 0;
+}
+body{
+    font-family: "Inter", sans-serif;
+    background-color: rgb(17, 17, 17);
+    background-repeat: no-repeat;
+}
+
+/* Shared classes starts here */
+
+/* Shared classes ends here */
+
+  
+/* Header section starts here */
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+}
+.nav-brands{
+    color: var(--primary-color);
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 50%;
+    font-style: italic;
+}
+.nav-links{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.nav-item{
+    list-style: none;
+}
+.nav-link{
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+.nav-item:first-child{
+    background-color: var(--primary-color);
+    padding: 8px 20px;
+    border-radius: 45px;
+}
+.nav-item:last-child{
+    display: none;
+}
+/* Header section ends here */
+
+
+
+/*===================== Responsive design starts here (For mobile) ======================== */
+@media screen and (max-width:576px) {
+    section{
+        margin-top: 50px;
+    }
+    .navbar{
+        padding: 50px 20px;
+    }
+    .nav-brands{
+        width: 50%;
+    }
+    .nav-item{
+        display: none;
+    }
+    .nav-item:last-child{
+        display: inline;
+    }
+    .nav-link > i{
+        font-size: 24px;
+    }
+}
+
+
+
+/*===================== Responsive design starts here (For tablet) ======================== */
+@media screen and (min-width:576px) and (max-width:992px) {
+
+}
