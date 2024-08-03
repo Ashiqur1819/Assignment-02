@@ -30,7 +30,8 @@ body{
 .run,
 .training,
 .bmi-header,
-.bmi-container{
+.bmi-container,
+.team{
     max-width: 1440px;
     margin: 0 auto;
     padding: 0 25px;
@@ -397,6 +398,46 @@ option{
 }
 /* BMI Section ends here */
 
+/* Team section starts here */
+.team-container{
+    margin-top: 50px;
+    padding: 25px;
+    border-radius: 25px;
+    background: rgb(34, 34, 34);
+}
+.team-card{
+    position: relative;
+}
+.team-card-content{
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+}
+.team-content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+.team-img{
+    height: 400px;
+}
+.team-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    filter: brightness(80%);
+    object-fit: cover; 
+}
+.team-content-title{
+    color: white;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+.team-content-sub-title{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1rem;
+}
+/* Team section ends here */
 
 
 /*===================== Responsive design starts here (For mobile) ======================== */
@@ -550,6 +591,17 @@ option{
     #cal-btn{
         padding: 15px 50px;
     }
+    .team-content,
+    .footer-container{
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+    .team-card:first-child, .team-card:nth-child(3){
+        display: none;
+    }
+    .team-img{
+        height: 300px;
+    }
  
 }
 
@@ -614,5 +666,8 @@ option{
     }
     #cal-btn{
         padding: 15px 100px;
+    }
+    .team-img{
+        height: 300px;
     }
 }
