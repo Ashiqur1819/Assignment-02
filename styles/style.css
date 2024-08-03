@@ -31,7 +31,8 @@ body{
 .training,
 .bmi-header,
 .bmi-container,
-.team{
+.team,
+.price{
     max-width: 1440px;
     margin: 0 auto;
     padding: 0 25px;
@@ -249,6 +250,9 @@ section{
     object-fit: none;
     Object-position: 70% 30%;
 }
+#run-btn{
+    padding: 15px 70px;
+}
 /* Run section ends here */
 
 /* Training section starts here */
@@ -439,6 +443,57 @@ option{
 }
 /* Team section ends here */
 
+/* Price section starts here */
+.price-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 100px;
+    padding: 0 50px;
+    margin-top: 50px;
+ 
+ }
+ .price-card{
+     background-color:rgb(34, 34, 34);
+     padding: 50px;
+     border-radius: 10px;
+     border: 1px solid rgb(109, 109, 109);
+     transition: .3s;
+ }
+ .price-card:hover{
+     background-color: rgb(17, 17, 17);
+     transform: translateY(-10px);
+     transition: .3s;
+ }
+ .price-card-title{
+     font-size: 2rem;
+     color: white;
+     font-weight: 800;
+     margin-bottom: 5px;
+     letter-spacing: 2px;
+ }
+ .price-card-sub-title{
+     font-size: 1rem;
+     font-weight: 500;
+     color: rgba(255, 255, 255, 0.5);
+     margin-bottom: 35px;
+ }
+ .amount{
+     font-size: 3rem;
+     font-weight: 800;
+     color: var(--primary-color);
+     margin-bottom: 35px;
+ }
+ .card-footer{
+     color: rgba(255, 255, 255, 0.5);
+     margin-bottom: 50px;
+ }
+ .card-footer > hr{
+     background-color: rgb(85, 85, 85);
+     height: .1px;
+     opacity: .2;
+ }
+ /* Price section ends here */
+
 
 /*===================== Responsive design starts here (For mobile) ======================== */
 @media screen and (max-width:576px) {
@@ -602,6 +657,20 @@ option{
     .team-img{
         height: 300px;
     }
+    .price-container{
+        grid-template-columns: 1fr;
+        gap: 25px;
+        padding: 0;
+    }
+    .price-card{
+        padding: 20px;
+    }
+    .price-card-title{
+        font-size: 1.7rem;
+    }
+    #join-btn{
+        width: 100%;
+    }
  
 }
 
@@ -669,5 +738,12 @@ option{
     }
     .team-img{
         height: 300px;
+    }
+    .price-container{
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+    #join-btn{
+        padding: 15px 100px;
     }
 }
