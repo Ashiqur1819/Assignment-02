@@ -325,7 +325,8 @@ section{
 .bmi-bg{
     background: rgb(34, 34, 34);
 }
-.bmi-title, .bmi-description{
+.bmi-title, 
+.bmi-description{
     margin-left: 150px;
     padding: 0 100px;
 }
@@ -345,7 +346,8 @@ table{
 td,
 th{
     border: 1px solid rgba(255, 255, 255, 0.1);
-    padding: 15px 25px;
+    padding: 20px 25px;
+    text-align: left;
 }
 .bmi-chart-title,
 .bmi-calculate-title{
@@ -450,7 +452,6 @@ option{
     gap: 100px;
     padding: 0 50px;
     margin-top: 50px;
- 
  }
  .price-card{
      background-color:rgb(34, 34, 34);
@@ -684,7 +685,8 @@ hr{
         padding: 50px 20px;
         gap: 0px;
     }
-    .bmi-title, .bmi-description{
+    .bmi-title, 
+    .bmi-description{
         margin-left: 0;
         padding: 0;
     }
@@ -706,7 +708,8 @@ hr{
         grid-template-columns: 1fr;
         gap: 25px;
     }
-    .team-card:first-child, .team-card:nth-child(3){
+    .team-card:first-child, 
+    .team-card:nth-child(3){
         display: none;
     }
     .team-img{
@@ -734,9 +737,8 @@ hr{
         flex-direction: column;
         gap: 50px;
     }
- 
 }
-
+/*===================== Responsive design ends here (For mobile) ======================== */
 
 
 /*===================== Responsive design starts here (For tablet) ======================== */
@@ -785,7 +787,8 @@ hr{
     .trainng-card{
         height: 200px;
     }
-    .bmi-title, .bmi-description{
+    .bmi-title, 
+    .bmi-description{
         margin-left: 0;
         padding: 0;
     }
@@ -793,7 +796,8 @@ hr{
         gap: 50px;
         padding: 50px 25px;
     }
-    th, td{
+    th, 
+    td{
         padding: 20px 30px;
     }
     #cal-btn{
@@ -820,3 +824,4 @@ hr{
         gap: 150px;
     }
 }
+/*===================== Responsive design ends here (For tablet) ======================== */
