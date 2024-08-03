@@ -494,6 +494,61 @@ option{
  }
  /* Price section ends here */
 
+/* Footer section starts here */
+footer{
+    background: rgb(23, 23, 23);
+}
+.footer-container{
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: end;
+    gap: 200px;
+    padding: 50px 25px;
+}
+.footer-title{
+    color:var(--primary-color);
+    font-size: 4rem;
+    font-weight: 800;
+    font-style: italic;
+    margin-bottom: 25px;
+}
+.quick-links-title{
+    color: rgb(255, 255, 255);
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+.quick-link{
+    margin-top: 25px;
+    padding-left: 0;
+}
+.quick-item{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.2rem;
+    font-weight: 400;
+    list-style: none;
+    margin-top: 10px;
+}
+.footer-footer{
+    display: flex;
+    gap: 150px;
+}
+hr{
+    max-width: 1440px;
+    margin: 0 auto;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    margin: 25px;
+}
+.copy{
+    color: rgba(255, 255, 255, 0.3);
+    text-align: center;
+    padding: 35px;
+}
+/* Footer section ends here */
+
 
 /*===================== Responsive design starts here (For mobile) ======================== */
 @media screen and (max-width:576px) {
@@ -671,6 +726,14 @@ option{
     #join-btn{
         width: 100%;
     }
+    .footer-container{
+        padding: 50px 20px;
+    }
+    .footer-footer{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
  
 }
 
@@ -742,8 +805,18 @@ option{
     .price-container{
         grid-template-columns: 1fr;
         gap: 25px;
+        padding: 0;
     }
     #join-btn{
         padding: 15px 100px;
+    }
+    .footer-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 100px;
+    }
+    .footer-footer{
+        display: flex;
+        gap: 150px;
     }
 }
