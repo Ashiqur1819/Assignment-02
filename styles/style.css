@@ -28,7 +28,9 @@ body{
 .banner-container,
 .habits,
 .run,
-.training{
+.training,
+.bmi-header,
+.bmi-container{
     max-width: 1440px;
     margin: 0 auto;
     padding: 0 25px;
@@ -314,6 +316,88 @@ section{
 }
 /* Training section ends here */
 
+/* BMI Section starts here */
+.bmi-bg{
+    background: rgb(34, 34, 34);
+}
+.bmi-title, .bmi-description{
+    margin-left: 150px;
+    padding: 0 100px;
+}
+.bmi-container{
+    margin-top: 70px;
+    background: rgb(34, 34, 34);
+    display: flex;
+    gap: 150px;
+    padding: 60px;
+}
+.bmi-chart{
+    width: 60%;
+}
+table{
+    border-collapse: collapse;
+  }
+td,
+th{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 15px 25px;
+}
+.bmi-chart-title,
+.bmi-calculate-title{
+    color: rgb(255, 255, 255);
+    font-size: 1.8rem;
+    font-weight: 900;
+    margin-bottom: 50px;
+}
+th{
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    font-weight: 500;
+}
+td{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: .8rem;
+    font-weight: 400;
+}
+.bmi-calculate-description{
+    margin-bottom: 25px;
+}
+input,
+#sex,
+#factor{
+    margin-bottom: 10px;
+    padding: 15px 20px;
+    margin-right: 7px;
+    border-radius: 8px;
+    color: rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    outline: none;
+}
+input::placeholder{
+    color: rgba(255, 255, 255, 0.6);
+}
+#height,
+#weight,
+#age{
+    width: calc(50% - 50px);
+}
+#sex{
+    width: calc(50% - 10px);
+}
+#factor{
+    width: calc(100% - 8px);
+    margin-bottom: 25px;
+}
+option{
+    background: #000;
+}
+#cal-btn{
+    padding: 15px 50px;
+}
+/* BMI Section ends here */
+
+
 
 /*===================== Responsive design starts here (For mobile) ======================== */
 @media screen and (max-width:576px) {
@@ -347,13 +431,16 @@ section{
     }
     .banner-container,
     .habits-container,
-    .run-container{
+    .run-container,
+    .bmi-container{
         flex-direction: column;
     }
     .banner-content,
     .run-content,
     #run-btn,
-    .run-image{
+    .run-image,
+    .bmi-chart,
+    .bmi-calculate{
         width: 100%;
     }
     .banner-title{
@@ -424,7 +511,7 @@ section{
         object-fit: cover;
     }
     .title{
-        font-size: 2.3rem;
+        font-size: 2rem;
     }
     .description{
         font-size: .9rem;
@@ -442,6 +529,27 @@ section{
     .trainng-card{
         height: 150px;
     }
+    .bmi-container{
+        padding: 50px 20px;
+        gap: 0px;
+    }
+    .bmi-title, .bmi-description{
+        margin-left: 0;
+        padding: 0;
+    }
+    .bmi-chart{
+        margin-bottom: 70px;
+    }
+    th, td{
+        padding: 20px 15px;
+    }
+    td,
+    th {
+       text-align: left;
+    }
+    #cal-btn{
+        padding: 15px 50px;
+    }
  
 }
 
@@ -452,7 +560,8 @@ section{
     .nav-links{
         margin-right: 0;
     }
-    .banner-container{
+    .banner-container,
+    .bmi-container{
         flex-direction: column;
     }
     .banner-content{
@@ -491,5 +600,19 @@ section{
     }
     .trainng-card{
         height: 200px;
+    }
+    .bmi-title, .bmi-description{
+        margin-left: 0;
+        padding: 0;
+    }
+    .bmi-container{
+        gap: 50px;
+        padding: 50px 25px;
+    }
+    th, td{
+        padding: 20px 30px;
+    }
+    #cal-btn{
+        padding: 15px 100px;
     }
 }
