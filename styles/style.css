@@ -187,6 +187,7 @@ section{
     padding-left: 15px;
     color: white;
     line-height: 44px;
+    visibility: hidden;
 }
 .banner-card-title{
     color: rgb(250, 250, 249);
@@ -652,6 +653,9 @@ hr{
     .banner-card-img{
         font-size: 2rem;
         color: var(--primary-color);
+    }
+    .banner-card-img > i{
+        visibility: visible;
     }
     .banner-card-title{
         font-size: 1.5rem;
