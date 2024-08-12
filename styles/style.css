@@ -621,9 +621,9 @@ hr{
     .btn{
         margin-bottom: 10px;
         background-color: var(--primary-color);
-        padding: 15px 25px;
-        margin-right: 15px;
-        font-size: 1rem;
+        padding: 10px 13px;
+        margin-right: 10px;
+        font-size: .9rem;
     }
     .banner-image{
         width: 100%;
@@ -638,27 +638,32 @@ hr{
     }
     .banner-card-1{
         position: absolute;
-        bottom: 240px;
+        bottom: 200px;
     }
     .banner-card-2{
         position: absolute;
-        left: 195px;
+        left: 52%;
         top: 70px;
     }
     .banner-card-1,
     .banner-card-2{
-        width: 150px;
-        padding: 15px 10px;
+        width: 130px;
+        padding: 10px;
     }
     .banner-card-img{
-        font-size: 2rem;
         color: var(--primary-color);
+     
     }
     .banner-card-img > i{
         visibility: visible;
+        font-size: .8rem;
+        padding: 13px 7px;
+        padding-top: 14px;
+        padding-left: 9px;
+        line-height: 0;
     }
     .banner-card-title{
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         margin-top: 0;
         margin-bottom: 0;
     }
@@ -712,8 +717,8 @@ hr{
     td,
     th {
        text-align: left;
-       font-size: 1rem;
-       padding: 20px 30px;
+       font-size: .9rem;
+       padding: 20px 15px;
     }
     #cal-btn{
         padding: 15px 50px;
@@ -773,7 +778,7 @@ hr{
     }
     .banner-card-2{
         top: 70px;
-        right: -200px;
+        left: 350px;
     }
     .habits-container{
         display: grid;
@@ -810,7 +815,7 @@ hr{
     }
     th, 
     td{
-        padding: 20px 30px;
+        padding: 20px 35px;
     }
     #cal-btn{
         padding: 15px 100px;
