@@ -555,7 +555,9 @@ hr{
     max-width: 1440px;
     margin: 0 auto;
     border: 2px solid rgba(255, 255, 255, 0.1);
-    margin: 25px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    text-align: center;
 }
 .copy{
     color: rgba(255, 255, 255, 0.3);
