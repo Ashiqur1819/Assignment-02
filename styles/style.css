@@ -44,6 +44,12 @@ section{
     font-weight: 400;
     color: rgba(255, 255, 255, 0.5);
     line-height: 25px;
+    text-align: justify;
+}
+.habits-description,
+.team-description,
+.price-description{
+    padding: 0 140px;
 }
 .text-center{
     text-align: center;
@@ -376,13 +382,14 @@ input,
 #sex,
 #factor{
     margin-bottom: 15px;
-    padding: 15px 20px;
+    padding: 17px 20px;
     margin-right: 7px;
     border-radius: 8px;
     color: rgba(255, 255, 255, 0.6);
     background: rgba(255, 255, 255, 0.1);
     border: none;
     outline: none;
+    border-right: 10px solid #393939;
 }
 input::placeholder{
     color: rgba(255, 255, 255, 0.6);
@@ -390,7 +397,7 @@ input::placeholder{
 #height,
 #weight,
 #age{
-    width: calc(50% - 50px);
+    width: calc(50% - 60px);
 }
 #sex{
     width: calc(50% - 10px);
@@ -667,6 +674,11 @@ hr{
         margin-top: 0;
         margin-bottom: 0;
     }
+    .habits-description,
+    .team-description,
+    .price-description{
+        padding: 0;
+    }
     .run-content{
         padding-left: 0;
     }
@@ -778,6 +790,11 @@ hr{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         justify-content: center;
+    }
+    .habits-description,
+    .team-description,
+    .price-description{
+        padding: 0 50px;
     }
     .run-container{
         padding: 35px;
