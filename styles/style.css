@@ -403,7 +403,7 @@ input::placeholder{
     width: calc(50% - 10px);
 }
 #factor{
-    width: calc(100% - 8px);
+    width: calc(100% - 9px);
     margin-bottom: 25px;
 }
 option{
